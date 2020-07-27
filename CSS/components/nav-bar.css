@@ -27,18 +27,3 @@
     left:15px;
     bottom:17px;
 }
-
-.nav__notification_2{
-    background-color: tomato;
-    width: 5px;
-    height:5px;
-    border-radius: 50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
-    position: absolute;
-    left:35px;
-    bottom:25px;
-}

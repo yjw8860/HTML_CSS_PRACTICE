@@ -18,3 +18,14 @@
 .screen-header__icons span{
     margin-left:25px;
 }
+
+.nav_badge{
+    position: absolute;
+    left:35px;
+}
+
+.find_badge{
+    position: absolute;
+    right:20px;
+    top:30px;
+}
