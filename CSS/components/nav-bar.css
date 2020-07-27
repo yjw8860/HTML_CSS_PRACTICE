@@ -1,0 +1,53 @@
+.nav{
+    position: fixed;
+    bottom:0;
+    background-color: #f9f9fa;
+    /*li 가로간격 동일하게 설정 START */
+    width:100%;
+    padding:20px 50px;
+    box-sizing:border-box;
+    /*li 가로간격 동일하게 설정 END */
+    border-top:1px solid rgba(121,121,121,0.3);
+}
+
+.nav__list{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* navigation bar에 빨강색 알림 뜨게 만들기 */
+.nav__link{
+    /* nav__notification의 position이 absolute이기 때문에, container인 nav_link의 position을 relative로 설정! */
+    position:relative; 
+    color: #2e363e
+}
+
+.nav__notification{
+    background-color: tomato;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left:15px;
+    bottom:17px;
+}
+
+.nav__notification_2{
+    background-color: tomato;
+    width: 5px;
+    height:5px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left:35px;
+    bottom:25px;
+}
