@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WELCOME TO KOKOA TALK</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <div class='status-bar'>
@@ -18,11 +19,25 @@
         <div class='status-bar__column'>
             <span>110%</span>
             <!-- Battery Icon-->
-            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-battery-full fa-lg"></i>
             <!-- Lightning Icon-->
             <i class="fas fa-bolt"></i>
         </div>
     </div>
+
+    <header class='welcome-header'>
+        <h1 class='welcome-header__title'>Welcome to KaKaoTalk</h1>
+        <p class='welcome-header__text'>If you have a KaKao Account, log in with your email or phone number.</p>
+    </header>
+
+    <form id='login-form'>
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submint" value='Log In'>
+        <a href="#">Find KaKao Account or Password</a>
+    </form>
+
+
     <script src="https://kit.fontawesome.com/a538ee334a.js" crossorigin="anonymous"></script>
 </body>
 </html>
