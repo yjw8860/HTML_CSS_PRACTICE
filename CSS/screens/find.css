@@ -58,7 +58,10 @@
 .open-post{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .open-post__title{
@@ -92,7 +95,7 @@
     width: 100px;
     height: 100px;
     margin:0px;
-    border-radius: 20%;
+    border-radius: 10%;
     margin-right: 5px;
 }
 
@@ -116,8 +119,8 @@
     position: absolute;
     bottom: 15px;
     left: 35px;
-    background-color: rgba(0,0,0,0.5);
+    background-color:var(--font-gray);
     color: white;
-    padding: 3px;
-    border-radius: 20%;
+    padding: 5px;
+    border-radius: 30%;
 }
