@@ -1,36 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "status-bar.css";
 
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* status bar에서 시간을 가운데로 두고 나머지를 양 끝으로 두는 CSS 코드 START */
-.status-bar{
+.welcome-header{
+    margin:90px 0px;
+    text-align: center;
     display:flex;
-    justify-content: center;
-}
-
-.status-bar__column{
-    width:33%;
-}
-
-.status-bar__column:first-child span{
-    margin-right: 5px;
-}
-
-.status-bar__column:nth-child(2){
-    display: flex;
-    justify-content: center;   
-}
-
-/* 배터리 잔량을 표시하는 글자와 배터리 아이콘의 배치를 깔끔하게 만들기 위해 마지막에 align-items: center;를 추가함 */
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
 }
-/* status bar에서 시간을 가운데로 두고 나머지를 양 끝으로 두는 CSS 코드 END */
 
-.status-bar__column .fa-battery-full{
-    margin: 0px 5px;
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-size:25px;
+    font-weight: 600;
+}
+.welcome-header__text{
+    width: 70%;
+    opacity: 0.7;
 }
