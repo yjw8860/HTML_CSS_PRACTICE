@@ -1,0 +1,48 @@
+.more {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-red {
+  color: #fc8686;
+}
+
+.icon-row-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  border-bottom: var(--main-border);
+}
+
+.more .icon-row__icon {
+  width: 75px;
+  height: 75px;
+}
+
+.more .icon-row-container .icon-row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestions-container {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestions-column {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.icon-row__icon span {
+  text-align: center;
+}
