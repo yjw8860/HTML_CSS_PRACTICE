@@ -1,0 +1,23 @@
+.alt-header{
+    position:absolute;
+    top:40px;
+    padding: 0px var(--horizontal-space);
+    display:flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    width:100%;
+}
+
+.alt-header__column:first-child{
+    margin-right:auto;
+}
+
+.alt-header__column:last-child{
+    margin-left:auto;
+}
+
+.alt-header__column h1{
+    font-size:25px;
+    font-weight: 700;
+}
