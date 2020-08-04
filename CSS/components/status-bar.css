@@ -1,35 +1,37 @@
 /* status bar에서 시간을 가운데로 두고 나머지를 양 끝으로 두는 CSS 코드 START */
-.status-bar{
-    display:flex;
-    justify-content: center;
-    padding: 5px 3px;
-    position: fixed;
-    top:0;
-    width:100%;
-    box-sizing:border-box;
+.status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 3;
 }
 
-.status-bar__column{
-    width:33%;
+.status-bar__column {
+  width: 33%;
 }
 
-.status-bar__column:first-child span{
-    margin-right: 5px;
+.status-bar__column:first-child span {
+  margin-right: 5px;
 }
 
-.status-bar__column:nth-child(2){
-    display: flex;
-    justify-content: center;   
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
 }
 
 /* 배터리 잔량을 표시하는 글자와 배터리 아이콘의 배치를 깔끔하게 만들기 위해 마지막에 align-items: center;를 추가함 */
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 /* status bar에서 시간을 가운데로 두고 나머지를 양 끝으로 두는 CSS 코드 END */
 
-.status-bar__column .fa-battery-full{
-    margin: 0px 5px;
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
 }

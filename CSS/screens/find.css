@@ -1,3 +1,10 @@
+.find {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .recommended-friends {
   margin: 25px 0px;
   padding: 25px 0px;
@@ -47,8 +54,7 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
-
-.open-post__hashtags {
+s .open-post__hashtags {
   text-transform: uppercase;
   opacity: 0.6;
 }
@@ -125,4 +131,15 @@
   /* will-change: transform ==> 하트 아이콘이 위 아래로 움직이지 않게 해줌(그래픽카드를 이용해서 애니메이션 작동) */
   will-change: transform;
   animation: heartBeat 0.5s ease-in-out infinite;
+}
+
+.find__main__screen {
+  position: fixed;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.find__nav {
+  height: 10%;
 }
