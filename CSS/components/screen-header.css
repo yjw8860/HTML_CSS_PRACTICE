@@ -1,31 +1,44 @@
-.screen-header{
-    position: absolute;
-    top:25px;
-    width:100%;
-    box-sizing:border-box;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    align-items: center;
-    padding: var(--horizontal-space);
+.screen-header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  padding: var(--horizontal-space);
 }
 
-.screen-header__title{
-    font-size: 32px;
-    font-weight: 600;
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
 }
 
-.screen-header__icons span{
-    margin-left:25px;
+.screen-header__icons span {
+  margin-left: 25px;
 }
 
-.nav_badge{
-    position: absolute;
-    left:35px;
+.nav_badge {
+  position: absolute;
+  left: 35px;
 }
 
-.find_badge{
-    position: absolute;
-    right:20px;
-    top:30px;
+.find_badge {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
 }

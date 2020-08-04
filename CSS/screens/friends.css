@@ -1,35 +1,60 @@
-#friends-display-link{
-    position:absolute;
-    top:80px;
-    text-align: center;
-    display: block;
-    width:100%;
-    background-color: #fafafa;
-    padding:15px 0px;
-    margin: 15px 0px;
-    font-size: 16px;
+#friends-display-link {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  margin: 15px 0px;
+  font-size: 16px;
 }
 
-#friends-display-link i{
-    color:var(--font-gray);
+#friends-display-link i {
+  color: var(--font-gray);
 }
 
-.friends{
-    position: absolute;
-    top: 150px;
-    width: 100%;
-    box-sizing: border-box;
+.friends {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.friends-screen__channel{
-    margin-top:25px;
-    border-top:var(--main-border);
-    padding-top:15px;
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
 }
 
-.friends-screen__channel-header{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    color: var(--font-gray);
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-gray);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /* visibility: hidden ==> 사용자 screen에서 아예 사라지게 하지만, html상에선 여전히 존재함 */
+    visibility: hidden;
+  }
+}
+
+#splash__screen {
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  /* forward ==> animation이 끝난 상태로 냅두는 기능 */
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 1s;
 }
